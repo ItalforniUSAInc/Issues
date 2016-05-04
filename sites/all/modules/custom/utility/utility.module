@@ -1,0 +1,33 @@
+<?php
+
+function utility_menu_alter(&$items) {
+  
+	$items['user/%user']['access arguments'] = array('access user profiles');
+  $items['user/%user']['access callback'] = 'user_access';
+  $items['user/%user/edit']['access arguments'] = array('administer users');
+  $items['user/%user/edit']['access callback'] = 'user_access';
+
+}
+
+/**
+ * Theme webform
+ */
+function utility_form_alter(&$form, &$form_state, $form_id) {
+
+	if($form_id == 'webform_client_form_48'){
+		$form['submitted']['owner_information']['state']['#options']['-1'] = '-----------------------------------';
+		$form['submitted']['owner_information']['state']['#options']['CAN'] = t('Canada');
+	}
+	
+  if($form_id == 'webform_client_form_11'){
+    $form['#after_build'][] = 'captcha_after_build';
+  }
+  
+}
+
+function captcha_after_build($form, &$form_state){
+  
+  unset($form['captcha']['#description']);
+  return $form;
+  
+}

@@ -1,0 +1,6 @@
+; $Id$
+name = Find store
+description = Find store
+package = Custom
+core = "7.x"
+project = "find_store"

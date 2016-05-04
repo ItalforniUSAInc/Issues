@@ -1,0 +1,6 @@
+; $Id$
+name = Calculator
+description = Calculator
+package = Custom
+core = "7.x"
+project = "calculator"

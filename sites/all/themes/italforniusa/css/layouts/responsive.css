@@ -1,0 +1,259 @@
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+/**
+ * Center the page.
+ *
+ * For screen sizes larger than 1200px, prevent excessively long lines of text
+ * by setting a max-width.
+ */
+#page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+
+/* Apply the shared properties of grid items in a single, efficient ruleset. */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/path/to/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* Containers for grid items and flow items. */
+#header,
+#main,
+#footer {
+  *position: relative;
+  *zoom: 1;
+}
+#header:before,
+#header:after,
+#main:before,
+#main:after,
+#footer:before,
+#footer:after {
+  content: "";
+  display: table;
+}
+#header:after,
+#main:after,
+#footer:after {
+  clear: both;
+}
+
+/* Navigation bar */
+@media all and (min-width: 480px) {
+  #main {
+    /* Move all the children of #main down to make room. */
+    padding-top: 3em;
+    position: relative;
+  }
+  #navigation {
+    /* Move the navbar up inside #main's padding. */
+    position: absolute;
+    top: 0;
+    height: 3em;
+    width: 100%;
+  }
+}
+
+/**
+ * Use 3 grid columns for smaller screens.
+ */
+@media all and (min-width: 480px) and (max-width: 959px) {
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+
+  /* Span 2 columns, starting in 1st column from left. */
+  .sidebar-second #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+  }
+
+  /* Span 1 column, starting in 3rd column from left. */
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+
+}
+
+/**
+ * Use 5 grid columns for larger screens.
+ */
+@media all and (min-width: 960px) {
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+
+  /* Span 4 columns, starting in 1st column from left. */
+  .sidebar-second #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+  }
+
+  /* Span 1 column, starting in 5th column from left. */
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+
+}
+
+/* italforniusa style
+========================================================================*/
+#content {
+	padding: 0 15px 0 15px;
+	}
+.region-sidebar-second {
+	padding: 0 15px;
+	}
+
+/* 880px
+========================================================================*/
+@media all and (max-width: 880px) {
+  
+	#page {
+		padding-top: 52px !important;
+		}
+  .mean-container .mean-bar {
+    position: fixed !important;
+    }
+  #header {
+    text-align: center;
+    }
+  .header__logo {
+    display: block;
+    float: none !important;
+    margin-top: 10px !important;
+    }
+	#site-slogan {
+		display: none;
+		}
+	.header__region {
+		/* display: none !important; */
+		}
+	#navigation {
+		display: none !important;
+		}
+  #main {
+    padding-top: 15px !important;
+    }
+  #block-locale-language {
+    top: 60px !important;
+    }
+  #block-mobile-switch-block-switch {
+    top: 60px! important;
+    }
+    
+  body.node-type-home-page .wrapper {
+    width: 100% !important;
+    }
+
+}
+
+/* 768px
+========================================================================*/
+@media all and (max-width: 768px) {
+
+	#block-views-news-block-1,
+	#block-views-gallery-block-1 {
+		float: none !important;
+		width: 100% !important;
+		}
+    
+  body.node-type-page .field-name-field-image,
+  body.node-type-media .field-name-field-youtube,
+  body.node-type-news .field-name-field-image-news {
+    float: none !important;
+    margin: 20px 0 !important;
+    text-align: center;
+    }
+    
+  #webform-client-form-11 textarea,
+  #webform-client-form-48 textarea,
+  #webform-client-form-145 textarea,
+  #webform-client-form-161 textarea,
+  #webform-client-form-11 input.form-text,
+  #webform-client-form-48 input.form-text,
+  #webform-client-form-145 input.form-text,
+  #webform-client-form-161 input.form-text {
+    width: 100% !important;
+    }
+		
+}
+
+@media all and (min-width: 480px) and (max-width: 760px) {
+
+  .region-sidebar-second .block .views-row .views-field-field-youtube, 
+  .region-sidebar-second .block .views-row .views-field-field-image-news, 
+  .region-sidebar-second .block .views-row .views-field-field-image-product, 
+  .region-sidebar-second .block .views-row .views-field-field-image-gallery {
+    float: none !important;
+    margin: 10px 0 !important;
+    text-align: center;
+  }
+  
+  .region-sidebar-second .block .views-row .views-field-field-youtube img, 
+  .region-sidebar-second .block .views-row .views-field-field-image-news img, 
+  .region-sidebar-second .block .views-row .views-field-field-image-product img, 
+  .region-sidebar-second .block .views-row .views-field-field-image-gallery img {
+    border: 1px solid #edecec;
+    float: none !important;
+  }
+
+}
+
+/* 360px
+========================================================================*/
+@media all and (max-width: 360px) {
+
+	.view-display-id-page .views-field-field-youtube, 
+  .view-display-id-page .views-field-field-image-news, 
+  .view-display-id-page .views-field-field-image-gallery, 
+  .view-display-id-page .views-field-field-image-product {
+    float: none !important;
+    margin: 20px 0 !important;
+    text-align: center;
+    }
+  .view-display-id-page .views-field-field-youtube img, 
+  .view-display-id-page .views-field-field-image-news img, 
+  .view-display-id-page .views-field-field-image-gallery img, 
+  .view-display-id-page .views-field-field-image-product img {
+    border: 1px solid #edecec;
+    float: none !important;
+    }
+		
+}

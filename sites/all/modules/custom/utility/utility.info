@@ -1,0 +1,6 @@
+; $Id$
+name = Utility
+description = Utility
+package = Custom
+core = "7.x"
+project = "utility"

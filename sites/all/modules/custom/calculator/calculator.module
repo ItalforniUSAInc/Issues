@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * Implements of hook_menu().
+ */
+function calculator_menu() {
+
+  $items = array();
+  
+  // TSA
+  $items['calculator/tsa'] = array(
+    'title' => 'Baking Capacity Calculation TSA Electric Stone Conveyor Ovens',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('calculator_tsa'),
+    'file' => 'calculator.inc', 
+    'type' => MENU_CALLBACK, 
+    'access arguments' => array('access content'),
+  );
+  
+  // TSB
+  $items['calculator/tsb'] = array(
+    'title' => 'Baking Capacity Calculation TSB Electric Stone Conveyor Ovens',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('calculator_tsb'),
+    'file' => 'calculator.inc',
+    'type' => MENU_CALLBACK,
+    'access arguments' => array('access content'),
+  );
+  
+  return $items;
+
+}

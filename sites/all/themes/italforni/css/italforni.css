@@ -1,0 +1,1232 @@
+@font-face {
+  font-family: 'Conv_ColabLig';
+  src: url('../fonts/ColabLig.eot');
+  src: url('../fonts/ColabLig.woff') format('woff'), 
+       url('../fonts/ColabLig.ttf') format('truetype'), 
+       url('../fonts/ColabLig.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_ColabThi';
+  src: url('../fonts/ColabThi.eot');
+  src: url('../fonts/ColabThi.woff') format('woff'), 
+       url('../fonts/ColabThi.ttf') format('truetype'), 
+       url('../fonts/ColabThi.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_ColabReg';
+  src: url('../fonts/ColabReg.eot');
+  src: url('../fonts/ColabReg.woff') format('woff'), 
+       url('../fonts/ColabReg.ttf') format('truetype'), 
+       url('../fonts/ColabReg.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_ColabMed';
+  src: url('../fonts/ColabMed.eot');
+  src: url('../fonts/ColabMed.woff') format('woff'), 
+       url('../fonts/ColabMed.ttf') format('truetype'), 
+       url('../fonts/ColabMed.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html {
+  font-family: 'Conv_ColabThi', Sans-Serif;
+  /* Use a 12px base font size. 16px x 75% = 12px */
+  /* font-size: 75%; */
+  /* Use a 14px base font size. 16px x .875 = 14px */
+  font-size: 87.5%;
+  /* Use a 16px base font size. */
+  /* font-size: 100%; */
+  line-height: 1.286em; /* 14px x 1.286 = 18px */
+  }
+body {
+  background: url(../images/bg-body.png) repeat-x 50% 0 #f2f6f8;
+  color: #191919;
+  }
+a {
+  color: #525353;
+  outline: none;
+  text-decoration: none;
+  }
+a:hover {
+  text-decoration: underline;
+  }
+a:outline {
+  none;
+  }
+
+/* form elements
+------------------------------------------------------------------------*/
+label {
+  font-family: 'Conv_ColabThi', Sans-Serif;
+  font-weight: normal;
+  padding: 0 0 5px 10px;
+  }
+select {
+  border: 1px solid #c4c4c4;
+  color: #191919; /*#bab9b9;*/
+  height: 30px;
+  line-height: 30px;
+  }
+.form-text {
+  border: 1px solid #c4c4c4;
+  color: #191919; /*#bab9b9;*/
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  }
+textarea {
+  border: 1px solid #c4c4c4;
+  color: #191919; /*#bab9b9;*/
+  padding: 5px 10px;
+  resize: none;
+  height: 200px;
+  }
+.form-submit {
+  background: url(../images/bg-navigation.png) repeat-x 50% 0;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border: 1px solid #89191d;
+  color: #ffffff;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 25px;
+  text-transform: uppercase;
+  }
+.form-submit:hover {
+  text-decoration: underline;
+  }
+.description {
+  color: #bab9b9;
+  margin-top: 5px;
+  }
+  
+/* layout
+------------------------------------------------------------------------*/
+#page {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  /*max-width: 960px;*/
+  }
+
+
+/* header
+========================================================================*/
+#site-slogan {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 65px 0 0 200px;
+  }
+#header {
+  height: 125px;
+  padding: 0;
+  }
+#logo {
+  margin: 9px 0 0 0;
+  }
+.header__region {
+  clear: none;
+  float: right;
+  }
+/* simple ads
+------------------------------------------------------------------------*/
+#header .block-simpleads {  
+  margin: 17px 0 0 0; 
+  overflow: hidden; 
+  }
+#header .block-simpleads img {  
+  float: right; 
+  }
+  
+/* navigation
+------------------------------------------------------------------------*/
+#navigation {
+  background: url(../images/bg-navigation.png) repeat-x 50% 50%;
+  border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  -khtml-border-radius: 3px 3px 0 0;
+  border: 1px solid #89191d;
+  height: 42px;
+  }
+#navigation .menu li {
+  background: url(../images/separator-main-menu.png) no-repeat 100% 50%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 9px;
+  text-transform: uppercase;
+  }
+#navigation .menu li.first {
+  padding-left: 0;
+  }
+#navigation .menu li.last {
+  background: none;
+  color: #ffffff;
+  float: right;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-right: 0;
+  }
+#navigation .menu li a {
+  color: #ffffff;
+  }
+
+/* mean-bar
+========================================================================*/
+.mean-bar {
+  display: none;
+  }
+
+/* headings
+========================================================================*/
+h1#page-title {
+  color: #a91e23;
+  font-family: 'Conv_ColabMed', sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  text-transform: uppercase;
+  }
+
+/* main
+========================================================================*/
+#main {
+  background-color: #ffffff;
+  border: 1px solid #c8cccd;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(200,204,205,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(200,204,205,1);
+  box-shadow: 0px 0px 5px 0px rgba(200,204,205,1);
+  padding-top: 60px;
+  padding-bottom: 15px;
+  margin-bottom: 80px;
+  }
+
+/* content
+========================================================================*/
+#content {
+  border-right: 1px solid #dad4d4;
+  }
+.submitted {
+  color: #999999;
+  font-size: 0.9em;
+  }
+#block-sharethis-sharethis-block {
+  margin: 1.5em 0;
+  }
+  
+/* node type page
+========================================================================*/
+body.node-type-page .field-name-field-image {
+  float: right;
+  margin: 0 0 20px 20px;
+  }
+body.node-type-page .field-name-field-image img {
+  border: 1px solid #e7e7e7;
+  padding: 5px;
+  }
+  
+body.node-type-page .field-name-body img {
+  border: 1px solid #e7e7e7;
+  /*max-width: 595px;*/
+  /*padding: 5px;*/
+  }
+  
+/* node type news
+========================================================================*/
+body.node-type-news .field-name-field-image-news {
+  float: right;
+  margin: 0 0 20px 20px;
+  }
+body.node-type-news .field-name-field-image-news img {
+  border: 1px solid #e7e7e7;
+  padding: 5px;
+  }
+
+/* node type media
+========================================================================*/
+body.node-type-media .field-name-field-youtube {
+  float: right;
+  margin: 0 0 20px 20px;
+  position: relative;
+  }
+body.node-type-media .field-name-field-youtube img {
+  border: 1px solid #e7e7e7;
+  padding: 5px;
+  }
+body.node-type-media .field-name-field-youtube span.btn-youtube {
+  background: url(../images/btn-youtube.png) no-repeat;
+  height: 52px;
+  left: 35%;
+  position: absolute;
+  top: 32%;
+  width: 68px;
+  }
+body.node-type-media .field-name-field-youtube span.btn-youtube:hover {
+  background: url(../images/btn-youtube.png) no-repeat 0 100%;
+  }
+  
+/* node type technical support video
+========================================================================*/
+body.node-type-technical-support-video .field-name-field-youtube {
+  float: right;
+  margin: 0 0 20px 20px;
+  position: relative;
+  }
+body.node-type-technical-support-video .field-name-field-youtube img {
+  border: 1px solid #e7e7e7;
+  padding: 5px;
+  }
+body.node-type-technical-support-video .field-name-field-youtube span.btn-youtube {
+  background: url(../images/btn-youtube.png) no-repeat;
+  height: 52px;
+  left: 35%;
+  position: absolute;
+  top: 32%;
+  width: 68px;
+  }
+body.node-type-technical-support-video .field-name-field-youtube span.btn-youtube:hover {
+  background: url(../images/btn-youtube.png) no-repeat 0 100%;
+  }
+  
+/* node type technical support image
+========================================================================*/
+body.node-type-technical-support-image .field-name-field-image-gallery {
+  overflow: hidden;
+  }
+body.node-type-technical-support-image .field-name-field-image-gallery .field-item {
+  border: 5px solid #edecec;
+  float: left;
+  margin: 0 20px 20px 0;
+  overflow: hidden;
+  }
+body.node-type-technical-support-image .field-name-field-image-gallery .field-item img {
+  border: 3px solid #666666;
+  float: left;
+  }
+body.node-type-technical-support-image .field-name-field-image-gallery .field-item img:hover {
+  border: 3px solid #333333;
+  }
+  
+/* node type gallery
+========================================================================*/
+body.node-type-gallery .field-name-field-image-gallery {
+  overflow: hidden;
+  }
+body.node-type-gallery .field-name-field-image-gallery .field-item {
+  border: 5px solid #edecec;
+  float: left;
+  margin: 0 20px 20px 0;
+  overflow: hidden;
+  }
+body.node-type-gallery .field-name-field-image-gallery .field-item img {
+  border: 3px solid #666666;
+  float: left;
+  }
+body.node-type-gallery .field-name-field-image-gallery .field-item img:hover {
+  border: 3px solid #333333;
+  }
+
+/* node type product
+========================================================================*/
+body.node-type-product .field-name-field-image-product {
+  }
+body.node-type-product .field-name-field-image-product .field-item {
+  border: 5px solid #edecec;
+  float: left;
+  margin: 0 20px 20px 0;
+  overflow: hidden;
+  }
+body.node-type-product .field-name-field-image-product .field-item img {
+  border: 3px solid #666666;
+  float: left;
+  }
+body.node-type-product .field-name-field-image-product .field-item img:hover {
+  border: 3px solid #333333;
+  }
+
+body.node-type-product .field-name-field-video-product {
+  }
+body.node-type-product .field-name-field-video-product .field-item {
+  border: 5px solid #edecec;
+  float: left;
+  margin: 0 20px 20px 0;
+  overflow: hidden;
+  position: relative;
+  }
+body.node-type-product .field-name-field-video-product .field-item img {
+  border: 3px solid #666666;
+  float: left;
+  }
+body.node-type-product .field-name-field-video-product .field-item img:hover {
+  border: 3px solid #333333;
+  }  
+body.node-type-product .field-name-field-video-product span.btn-youtube {
+  background: url(../images/btn-youtube.png) no-repeat;
+  height: 52px;
+  left: 9%;
+  position: absolute;
+  top: 18%;
+  width: 68px;
+  }
+body.node-type-product .field-name-field-video-product span.btn-youtube:hover {
+  background: url(../images/btn-youtube.png) no-repeat 0 100%;
+  }
+  
+body.node-type-product .field-name-body,
+body.node-type-product .field-name-field-features-product {
+  clear: both;
+  }
+
+/* views
+========================================================================*/
+.view-display-id-page h3 {
+  color: #a91e23;
+  font-family: 'Conv_ColabMed', sans-serif;
+  font-size: 1.125em;
+  font-weight: normal;
+  margin-bottom: 5px;
+  }
+.view-display-id-page .views-row {
+  border-bottom: 1px solid #e1e1e1;
+  overflow: hidden;
+  padding: 10px 0;
+  }
+.view-display-id-page .views-row-last {
+  border: 0;
+  }
+.view-display-id-page .views-field-field-youtube,
+.view-display-id-page .views-field-field-image-news,
+.view-display-id-page .views-field-field-image-gallery,
+.view-display-id-page .views-field-field-image-product,
+.view-display-id-page .views-field-field-taxonomy-image {
+  float: left;
+  margin: 0 10px 0 0;
+  }
+.view-display-id-page .views-field-field-youtube img,
+.view-display-id-page .views-field-field-image-news img,
+.view-display-id-page .views-field-field-image-gallery img,
+.view-display-id-page .views-field-field-image-product img,
+.view-display-id-page .views-field-field-taxonomy-image img {
+  border: 1px solid #edecec;
+  float: left;
+  padding: 5px;
+  }
+.view-display-id-page .views-field-name,
+.view-display-id-page .views-field-title {
+  font-family: 'Conv_ColabMed', sans-serif;
+  font-size: 1.25em;
+  margin-bottom: 5px;
+  }
+.view-display-id-page .views-field-name a,
+.view-display-id-page .views-field-title a {
+  color: #191919;
+  }
+.view-display-id-page .views-field-created {
+  color: #999999;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  }
+  
+a.views-more-link {
+  text-decoration: underline;
+  }
+a.views-more-link:hover {
+  color: #a91e23;
+  }
+  
+.view-display-id-page .views-field-field-youtube {
+  position: relative;
+  }
+.view-display-id-page .views-field-field-youtube span.btn-youtube {
+  background: url(../images/btn-youtube.png) no-repeat;
+  height: 52px;
+  left: 31%;
+  position: absolute;
+  top: 30%;
+  width: 68px;
+  }
+.view-display-id-page .views-field-field-youtube span.btn-youtube:hover {
+  background: url(../images/btn-youtube.png) no-repeat 0 100%;
+  }
+
+  
+  
+body.page-node-4 h3 {
+  color: #a91e23;
+  font-family: 'Conv_ColabMed', sans-serif;
+  font-size: 1.25em;
+  font-weight: normal;
+  margin-bottom: 0px;
+  }
+  
+#block-views-technical-support-video-block-1 h3,
+#block-views-technical-support-video-block-2 h3 {
+  color: #a91e23;
+  font-family: 'Conv_ColabMed', sans-serif;
+  font-size: 1.125em;
+  font-weight: normal;
+  margin-bottom: 5px;
+  }
+#block-views-product-block-2 .views-row,
+#block-views-technical-support-video-block-1 .views-row,
+#block-views-technical-support-video-block-2 .views-row {
+  border-bottom: 1px solid #e1e1e1;
+  overflow: hidden;
+  padding: 10px 0;
+  }
+#block-views-product-block-2 .views-row-last,
+#block-views-technical-support-video-block-1 .views-row-last,
+#block-views-technical-support-video-block-2 .views-row-last {
+  border: 0;
+  }
+#block-views-product-block-2 .views-field-field-image-product,
+#block-views-technical-support-video-block-1 .views-field-field-image-gallery,
+#block-views-technical-support-video-block-2 .views-field-field-image-gallery,
+#block-views-technical-support-video-block-1 .views-field-field-youtube,
+#block-views-technical-support-video-block-2 .views-field-field-youtube {
+  float: left;
+  margin: 0 10px 0 0;
+  }
+#block-views-product-block-2 .views-field-field-image-product img,
+#block-views-technical-support-video-block-1 .views-field-field-image-gallery img,
+#block-views-technical-support-video-block-2 .views-field-field-image-gallery img,
+#block-views-technical-support-video-block-1 .views-field-field-youtube img,
+#block-views-technical-support-video-block-2 .views-field-field-youtube img {
+  border: 1px solid #edecec;
+  float: left;
+  padding: 5px;
+  }
+#block-views-product-block-2  .views-field-title,
+#block-views-technical-support-video-block-1 .views-field-name,
+#block-views-technical-support-video-block-2 .views-field-name,
+#block-views-technical-support-video-block-1 .views-field-title,
+#block-views-technical-support-video-block-2 .views-field-title {
+  font-family: 'Conv_ColabMed', sans-serif;
+  font-size: 1.25em;
+  margin-bottom: 5px;
+  }
+#block-views-product-block-2  .views-field-title
+#block-views-technical-support-video-block-1 .views-field-name a,
+#block-views-technical-support-video-block-2 .views-field-name a,
+#block-views-technical-support-video-block-1 .views-field-title a,
+#block-views-technical-support-video-block-2 .views-field-title a {
+  color: #191919;
+  }
+#block-views-technical-support-video-block-1 .views-field-created,
+#block-views-technical-support-video-block-2 .views-field-created {
+  color: #999999;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  }
+#block-views-technical-support-video-block-1 .views-field-field-youtube,
+#block-views-technical-support-video-block-2 .views-field-field-youtube {
+  position: relative;
+  }
+#block-views-technical-support-video-block-1 .views-field-field-youtube span.btn-youtube,
+#block-views-technical-support-video-block-2 .views-field-field-youtube span.btn-youtube {
+  background: url(../images/btn-youtube.png) no-repeat;
+  height: 52px;
+  left: 31%;
+  position: absolute;
+  top: 30%;
+  width: 68px;
+  }
+#block-views-technical-support-video-block-1 .views-field-field-youtube span.btn-youtube:hover,
+#block-views-technical-support-video-block-2 .views-field-field-youtube span.btn-youtube:hover {
+  background: url(../images/btn-youtube.png) no-repeat 0 100%;
+  }
+
+/* dealers
+========================================================================*/
+.view-dealers.view-display-id-page .views-field-title {
+font-family: inherit;
+font-size:1em;
+font-weight:bold;
+}
+.view-dealers.view-display-id-page .views-row p {
+margin: 0;
+}
+
+  
+/* price list
+========================================================================*/
+body.page-price-list h1#page-title {
+  display: none;
+  }
+#block-views-price-list-block-1 h2.block-title,
+#block-views-price-list-block-2 h2.block-title {
+  color: #a91e23;
+  font-family: 'Conv_ColabMed', sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  }
+  
+/* accordion
+------------------------------------------------------------------------*/
+.accordion:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  }
+.accordion.accordion-close {
+  background: url(../images/icon-accordion-open.png) no-repeat 98% 50%;
+  }
+.accordion.accordion-open {
+  background: url(../images/icon-accordion-close.png) no-repeat 98% 50%;
+  }
+  
+/* accordion attachment
+------------------------------------------------------------------------*/
+.accordion-attachment {
+  padding-left:15px;
+  }
+.accordion-attachment:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  }
+.accordion-attachment.accordion-attachment-close {
+  background: url(../images/icon-accordion-open.png) no-repeat 98% 50%;
+  }
+.accordion-attachment.accordion-attachment-open {
+  background: url(../images/icon-accordion-close.png) no-repeat 98% 50%;
+  }
+  
+/* home page
+========================================================================*/
+#block-views-product-block-1 {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(200,204,205,0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(200,204,205,0.3);
+  box-shadow: 0px 0px 5px 0px rgba(200,204,205,0.3);
+  margin-bottom: 15px;
+  position: relative;
+  }
+#block-views-product-block-1 .views_slideshow_cycle_main {
+  border: 1px solid #edecec;
+  overflow: hidden;
+  padding: 5px;
+  }
+#block-views-product-block-1 .views-row {
+  float: left;
+  position: relative;
+  }
+#block-views-product-block-1 .views-row img {
+  float: left;
+  }
+#block-views-product-block-1 .views-row .views-field-title {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+  bottom: 0;
+  padding: 6px 0;
+  position: absolute;
+  width: 100%;
+  }
+#block-views-product-block-1 .views-row .views-field-title a {
+  color: #535353;
+  }
+#block-views-product-block-1 .views-field-title span {
+  padding: 0 6px;
+  }
+#block-views-product-block-1 .views-slideshow-controls-bottom {
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  z-index: 1000;
+  }
+#block-views-product-block-1 .views-slideshow-controls-bottom .views-slideshow-pager-field-item { 
+  float: left; 
+  margin: 0 3px 0 0; 
+  }
+#block-views-product-block-1 .views-slideshow-controls-bottom .views-slideshow-pager-field-item.views-row-last {
+  margin-right: 0;
+  }
+#block-views-product-block-1 .views-slideshow-controls-bottom .views-slideshow-pager-field-item img { 
+  float: left;
+  }
+  
+#block-views-product-block-1 .views-slideshow-controls-bottom .views-content-counter {
+  background: url(../images/icon-circle.png) no-repeat 0 0;
+  float: right;
+  font-size: 0px;
+  line-height: 0px;
+  color: transparent;
+  text-indent: -9999px;
+  cursor: pointer;
+  margin-left: 3px;
+  height: 7px;
+  width: 7px;
+  }
+#block-views-product-block-1 .views-slideshow-controls-bottom .active .views-content-counter {
+  background: url(../images/icon-circle.png) no-repeat 0 100%;
+  }
+ 
+/* adverts
+------------------------------------------------------------------------*/
+#content .block-simpleads {
+  margin-bottom: 15px;
+  }
+#content .block-simpleads .simplead-container.image-ad {
+  overflow: hidden;
+  }
+#content .block-simpleads img {
+  float: left;
+  }
+
+/* latest
+========================================================================*/
+.region-latest {
+  overflow: hidden;
+  }
+.region-latest .block h2.block-title {
+  background: url(../images/bg-title-block-sidebar.png) repeat-x 50% 50%;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border: 1px solid #e1e1e1;
+  font-family: 'Conv_ColabMed',Sans-Serif;
+  font-size: 1.125em;
+  font-weight: normal;
+  height: 41px;
+  line-height: 41px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  }
+.region-latest .block .views-row {
+  border-bottom: 1px solid #e1e1e1;
+  overflow: hidden;
+  padding: 10px 0;
+  }
+.region-latest .block .views-row.views-row-last {
+  border-bottom: 0;
+  padding-bottom: 0;
+  }
+.region-latest .block .views-row .views-field-field-image-news,
+.region-latest .block .views-row .views-field-field-image-gallery {
+  border: 1px solid #edecec;
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 5px;
+  }
+.region-latest .block .views-row .views-field-field-image-news img,
+.region-latest .block .views-row .views-field-field-image-gallery img {
+  float: left;
+  }
+.region-latest .block .views-row .views-field-title {
+  font-family: 'Conv_ColabMed', sans-serif;
+  /*font-size: 1.125em;*/
+  }
+.region-latest .block .views-row .views-field-title a {
+  color: #191919;
+  }
+.region-latest .block .views-row .views-field-created {
+  color: #6a6f70;
+  font-size: 0.9em;
+  margin: 0;
+  }
+  
+#block-views-news-block-1 {
+  float: left;
+  width: 49%;
+  }
+#block-views-gallery-block-1 {
+  float: right;
+  width: 49%;
+  }
+  
+#block-nodeblock-1 {
+  float: left;
+  width: 49%;
+  }
+#block-nodeblock-2 {
+  float: right;
+  width: 49%;
+  }
+#block-nodeblock-1 .field-type-image,
+#block-nodeblock-2 .field-type-image {  
+  float: none;
+  margin: 15px 0;
+  }
+#block-nodeblock-1 .field-type-image img,
+#block-nodeblock-2 .field-type-image img {  
+  border: 1px solid #edecec;
+  padding: 5px;
+  }
+
+/* sidebar
+========================================================================*/
+.region-sidebar-second h2.block-title {
+  background: url(../images/bg-title-block-sidebar.png) repeat-x 50% 50%;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border: 1px solid #e1e1e1;
+  font-family: 'Conv_ColabMed',Sans-Serif;
+  font-size: 1.125em;
+  font-weight: normal;
+  height: 41px;
+  line-height: 41px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  }
+  
+.region-sidebar-second .block  ul.menu {
+  padding: 0 0 0 15px;
+  }
+.region-sidebar-second .block  ul.menu li {
+  list-style: none;
+  margin-bottom: 10px;
+  }
+.region-sidebar-second .block  ul.menu li a {
+  background: url(../images/arrow-grey-small.png) no-repeat 0 50%;
+  display: block;
+  padding-left: 15px;
+  }
+.region-sidebar-second .block  ul.menu li a:hover {
+  background: url(../images/arrow-red-small.png) no-repeat 0 50%;
+  color: #a91e23;
+  }
+.region-sidebar-second .block  ul.menu li.dhtml-menu ul {
+  margin-top: 8px;
+  }
+
+/* popular content
+------------------------------------------------------------------------*/
+.region-sidebar-second .block .views-row {
+  border-bottom: 1px solid #e1e1e1;
+  overflow: hidden;
+  padding: 10px 0;
+  }
+.region-sidebar-second .block .views-row.views-row-last {
+  border-bottom: 0;
+  padding-bottom: 0;
+  }
+.region-sidebar-second .block .views-row .views-field-field-youtube,
+.region-sidebar-second .block .views-row .views-field-field-image-news,
+.region-sidebar-second .block .views-row .views-field-field-image-product,
+.region-sidebar-second .block .views-row .views-field-field-image-gallery {
+  float: left;
+  margin: 0 10px 0 0;
+  }
+.region-sidebar-second .block .views-row .views-field-field-youtube img,
+.region-sidebar-second .block .views-row .views-field-field-image-news img,
+.region-sidebar-second .block .views-row .views-field-field-image-product img,
+.region-sidebar-second .block .views-row .views-field-field-image-gallery img {
+  border: 1px solid #edecec;
+  float: left;
+  padding: 5px;
+  }
+.region-sidebar-second .block .views-row .views-field-title {
+  font-family: 'Conv_ColabMed', sans-serif;
+  /*font-size: 1.125em;*/
+  }
+.region-sidebar-second .block .views-row .views-field-title a {
+  color: #191919;
+  }
+.region-sidebar-second .block .views-row .views-field-created {
+  color: #6a6f70;
+  font-size: 0.9em;
+  margin: 0;
+  }
+  
+/* distibutors
+------------------------------------------------------------------------*/
+#block-block-6 p {
+  padding: 0 15px;
+  }
+#block-block-6 a.link {
+  background: rgba(0, 0, 0, 0) url(../images/bg-navigation.png) repeat-x scroll 50% 0;
+  border: 1px solid #89191d;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  }
+
+/* region-bottom
+========================================================================*/
+.region-bottom {
+  background: url(../images/bg-region-bottom.png) repeat-x 50% 0;
+  height: 50px;
+  margin-top: 15px;
+  overflow: hidden;
+  }
+.region-bottom .region-inner {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 960px;
+  }
+  
+#block-menu-menu-footer-menu,
+#block-menu-menu-footer-spanish-menu {
+  float: left;
+  padding-top: 16px;
+  }
+#block-menu-menu-footer-menu ul.menu,
+#block-menu-menu-footer-spanish-menu ul.menu {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  }
+#block-menu-menu-footer-menu ul.menu li,
+#block-menu-menu-footer-spanish-menu ul li {
+  float: left;
+  list-style: none;
+  }
+#block-menu-menu-footer-menu ul.menu li a,
+#block-menu-menu-footer-spanish-menu ul.menu li a {
+  color: #ffffff;
+  padding: 0 10px;
+  }
+  
+#block-block-2,
+#block-block-4 {
+  color: #ffffff;
+  float: right;
+  padding-top: 16px;
+  }
+#block-block-2 p,
+#block-block-4 p {
+  margin: 0;
+  }
+#block-block-2 p a,
+#block-block-4 p a {
+  color: #ffffff;
+  margin-right: 20px;
+  }
+  
+  
+  
+  
+
+* {
+  margin: 0;
+  }
+html, body {
+  height: 100%;
+  }
+#page {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -65px;
+  }
+.region-bottom, .push {
+  clear: both;
+  height: 50px;
+  }
+
+
+  
+
+/* flexslider
+==============================================================*/
+.flexslider {
+  margin-bottom: 15px;
+  }
+  
+/* webforms
+==============================================================*/
+#webform-client-form-11 textarea,
+#webform-client-form-48 textarea,
+#webform-client-form-145 textarea,
+#webform-client-form-161 textarea,
+#webform-client-form-11 input.form-text,
+#webform-client-form-48 input.form-text,
+#webform-client-form-145 input.form-text,
+#webform-client-form-161 input.form-text {
+  width: 60%;
+  }
+  
+fieldset.captcha.form-wrapper, 
+fieldset.webform-component-fieldset {
+  border: 0 none;
+  margin: 1.5em 0;
+  padding: 0;
+  }
+fieldset.captcha.form-wrapper legend,
+fieldset.webform-component-fieldset legend {
+  color: #a91e23;
+  font-family: "Conv_ColabMed", sans-serif;
+  font-size: 1.125em;
+  text-transform: capitalize; 
+  }
+
+/* test the oven
+==============================================================*/
+#webform-client-form-85,
+#webform-client-form-142 {
+  background-color: #d8d8d8;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(200,204,205,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(200,204,205,1);
+  box-shadow: 0px 0px 5px 0px rgba(200,204,205,1);
+  padding: 10px;
+  width: 50%;
+  }
+#webform-client-form-85 .form-item.webform-component--attendees-name,
+#webform-client-form-142 .form-item.webform-component--attendees-name {
+  margin-top: 0;
+  }
+
+/* messages
+==============================================================*/
+.messages, 
+.messages--status, 
+.messages--warning, 
+.messages--error {
+  background-image: none;
+  padding: 10px;
+  }
+.messages.error.clientside-error {
+  border: 1px solid #c00 !important;
+  }
+.messages ul, 
+.messages--status ul, 
+.messages--warning ul, 
+.messages--error ul {
+  margin: 0;
+  padding: 0;
+  }
+.messages ul li, 
+.messages--status ul li, 
+.messages--warning ul li, 
+.messages--error ul li {
+  list-style: none;
+  }
+  
+/* home page
+==============================================================*/
+body.node-type-home-page {
+  background-color: transparent;
+  background-image: url(../images/bg-body_home.jpg);
+  background-position: 50% 0;
+  /*background-repeat: no-repeat;*/
+  }
+body.node-type-home-page #main {
+  background-color: transparent;
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+  padding-bottom: 15px;
+  padding-top: 60px;
+  }
+body.node-type-home-page #content {
+  border: 0;
+  }
+body.node-type-home-page .wrapper {
+  margin: 15px 0;
+  overflow: hidden;
+  text-align: center;
+  }
+body.node-type-home-page .wrapper .cont {
+  text-align: center;
+  }
+body.node-type-home-page .hp-top.wrapper .cont,
+body.node-type-home-page .hp-bottom.wrapper .cont {
+  margin: 0 auto;
+  }
+body.node-type-home-page .hp-middle.wrapper {
+  margin: 30px 0;
+  }
+body.node-type-home-page .hp-middle.wrapper .cont {
+  display: inline-block;
+  width: 305px;
+  }
+  
+.cont .field-type-text {
+  font-size: 1.125em;
+  margin-bottom: 10px;
+  }
+.cont .field-type-link-field a {
+  background: url(../images/icon-learn_more.png) no-repeat 93% 50% #a62025;
+  color: #ffffff;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 20px 0 10px;
+  text-transform: uppercase;
+  }
+  
+  
+.field-name-body a {
+  color:#525353;
+  }
+.field-name-body a:hover {
+  color: #a91e23;
+  }
+  
+body.node-type-home-page .region-bottom, 
+body.node-type-home-page .push {
+  height: inherit;
+  }
+  
+img {
+  height: auto !important;
+  }
+
+body.page-node-85 #main article.node-85,
+body.page-node-142 #main article.node-142 {
+  background: url(../images/bg-test_the_oven.png) no-repeat 0 365px #FFFFFF;
+  min-height: 830px; /* 450px; */
+  }
+  
+/* background
+==============================================================*/
+ 
+/* TK Series Electric Deck Ovens
+==============================================================*/
+article.node-30.view-mode-full {
+  background: url(../images/Italforni_TK-1I_ska1.png) no-repeat 50% 0%;
+  min-height: 600px;
+  }
+article.node-35.view-mode-full {
+  background: url(../images/Italforni_TK-1I_ska1.png) no-repeat 50% 0%;
+  min-height: 600px;
+  }
+article.node-36.view-mode-full {
+  background: url(../images/Italforni_TK-1I_ska1.png) no-repeat 50% 0%;
+  min-height: 600px;
+  }
+article.node-37.view-mode-full {
+  background: url(../images/Italforni_TK-1I_ska1.png) no-repeat 50% 0%;
+  min-height: 600px;
+  }
+  
+/* TSB Gas Conveyor Oven
+==============================================================*/
+article.node-29.view-mode-full {
+  background: url(../images/TS-GAS_big.png) no-repeat 50% 0%;
+  min-height: 464px;
+  }
+  
+/* TS Series Electric Conveyor Ovens
+==============================================================*/
+article.node-25.view-mode-full {
+  background: url(../images/TSB_electric_big.png) no-repeat 50% 0%;
+  min-height: 447px;
+  }
+  
+/* Bull Electric Deck Oven
+==============================================================*/
+article.node-32.view-mode-full {
+  background: url(../images/Italforni_Bull_Zoom.png) no-repeat 50% 0%;
+  }
+  
+/* Industrial Stone Tunnel Oven
+==============================================================*/
+article.node-31.view-mode-full {
+  background: url(../images/Industrial-Tunnel-Zoom.png) no-repeat 50% 0%;
+  min-height: 400px;
+  }
+
+/* TSC Gas Conveyor Oven
+==============================================================*/  
+/*
+article.node-47.view-mode-full {
+  background: url(../images/bg-test_the_oven.png) no-repeat 50% 50%;
+  }
+*/
+
+
+/* Dealers block
+==============================================================*/
+#block-block-3 {
+  background: url(../images/usa-map.png) no-repeat 50% 50%;
+  border: 1px solid #e7e7e7;
+  height: 471px;
+  width: 610px;
+  }
+
+span.province {
+  border: 2px solid #000000;
+  color: transparent;
+  display: inline-block;
+  font-size: 0px;
+  margin-right: 5px;
+  text-indent: -9999px;
+  height: 10px;
+  width: 15px;
+  }
+span.province.Connecticut {
+  background-color: #59a21d;
+  }
+span.province.Ohio {
+  background-color: #f7ee49;
+  }
+span.province.Arizona {
+  background-color: #ff0400;
+  }
+span.province.Arkansas {
+  background-color: #ff8000;
+  }
+span.province.Wyoming {
+  background-color: #ffffff;
+  }
+
+
+/* Mobile switch
+==============================================================*/
+#page {
+  position: relative;
+  }
+#block-mobile-switch-block-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  }
+#block-mobile-switch-block-switch ul.menu {
+  margin: 0;
+  }
+#block-mobile-switch-block-switch ul.menu li {
+  font-weight: bold;
+  list-style: none;
+  list-style-type: none;
+  }
+
+/* Language switch
+==============================================================*/
+#block-locale-language {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  }
+#block-locale-language ul.language-switcher-locale-url {
+  margin: 0;
+  }
+#block-locale-language ul.language-switcher-locale-url li {
+  display: inline;
+  font-weight: bold;
+  list-style: none;
+  list-style-type: none;
+  }
+
+/* Social networks
+==============================================================*/
+#block-block-7 {
+  position: relative;
+  top: -20px;
+}
+#block-block-7 p {
+  margin: 0;
+}
