@@ -57,6 +57,7 @@
   margin-right: 15px;
   padding-left: 0;
   border: 1px solid #EDECEC;
+  z-index: 999;
 }
 .page-buy .view-grouping .view-grouping-content .views-row .views-field.views-field-title {
   margin-bottom: 5px;
