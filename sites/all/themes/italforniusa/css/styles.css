@@ -96,17 +96,22 @@
   background-color: transparent !important;
   line-height: 26px !important;
   text-transform: uppercase !important;
+  appearance: none
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 #navigation div:nth-child(2) #ctct_button_footer {
   display: none;
 }
-
+.mean-bar .mean-nav ul > li.last-custom a {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 /**
  * Responsive design
  */
 
- /* Tablet and i-pad portrait view only */
+/* Tablet and i-pad portrait view only */
 @media screen and (max-width: 992px) {
   /*#block-sharethis-sharethis-block  .sharethis-wrapper {
     text-align: center;
@@ -129,5 +134,8 @@
   .view-display-id-page .views-row {
     padding: 0 !important;
     overflow: visible !important;
+  }
+  #navigation div:nth-child(2) a.button {
+    -webkit-appearance: none;
   }
 } /* 480 */

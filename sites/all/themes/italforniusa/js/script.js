@@ -34,11 +34,10 @@ Drupal.behaviors.italforniusa = {
         .css({ top: mousey, left: mousex })
     });
 
-
     /*if(jQuery(window).width() < 880) {
       jQuery('#navigation div:nth-child(2) a.button').hide();
     }*/
-    $(".mean-bar a").live( "click", function() {
+    $(".mean-bar .meanclose").live( "click", function() {
       $(".mean-bar .mean-nav ul").append('<li class="last-custom"></li>');
         $("#navigation div:nth-child(2) a.button").clone().appendTo(".mean-bar .mean-nav ul > li.last-custom");
         $(".mean-bar .mean-nav ul > li.last-custom a").removeAttr("style");
