@@ -96,6 +96,7 @@
   background-color: transparent !important;
   line-height: 26px !important;
   text-transform: uppercase !important;
+  -webkit-appearance: none;
 }
 #navigation div:nth-child(2) #ctct_button_footer {
   display: none;

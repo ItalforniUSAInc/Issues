@@ -15,7 +15,7 @@ Drupal.behaviors.italforniusa = {
     });
 
     // Tooltip only Text
-    $('.masterTooltip').hover(function(){
+    $('.masterTooltip').hover(function() {
       // Hover over code
       var title = $(this).attr('title');
       $(this).data('tipText', title).removeAttr('title');
@@ -33,6 +33,18 @@ Drupal.behaviors.italforniusa = {
         $('.tooltip')
         .css({ top: mousey, left: mousex })
     });
+
+
+    /*if(jQuery(window).width() < 880) {
+      jQuery('#navigation div:nth-child(2) a.button').hide();
+    }*/
+    $(".mean-bar a").live( "click", function() {
+      $(".mean-bar .mean-nav ul").append('<li class="last-custom"></li>');
+        $("#navigation div:nth-child(2) a.button").clone().appendTo(".mean-bar .mean-nav ul > li.last-custom");
+        $(".mean-bar .mean-nav ul > li.last-custom a").removeAttr("style");
+    });
+
+
     
   }
 };
