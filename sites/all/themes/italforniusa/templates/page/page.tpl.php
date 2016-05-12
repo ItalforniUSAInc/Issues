@@ -60,6 +60,8 @@
 
       <?php print render($page['navigation']); ?>
 
+      <!-- BEGIN: Constant Contact Email List Form Button --><div align="center"><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=xy477wwab&amp;p=oi&amp;m=1123902455575&amp;sit=v4wbopmkb&amp;f=65636363-e285-4804-8f8b-3d224bc64c09" class="button" style="background-color: rgb(0, 128, 0); border: 1px solid rgb(91, 91, 91); color: rgb(255, 255, 255); display: inline-block; padding: 8px 10px; text-shadow: none; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">Join Our Email List</a><!-- BEGIN: Email Marketing you can trust --><div id="ctct_button_footer" align="center" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;margin-top: 10px;">For Email Marketing you can trust.</div></div>
+
     </div>
 
     <?php
