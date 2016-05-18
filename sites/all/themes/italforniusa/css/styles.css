@@ -82,11 +82,11 @@
 
 /* End */
 #navigation .menu li {
-  padding: 0 9px !important;
+  padding: 0 11px !important;
 }
-#navigation .menu li.last {
+/*#navigation .menu li.last {
  background: rgba(0, 0, 0, 0) url("../images/separator-main-menu.png") no-repeat scroll 100% 50% !important;
-}
+}*/
 #navigation div:nth-child(2) a.button {
   height: 26px !important;
   margin-top: -1px !important;

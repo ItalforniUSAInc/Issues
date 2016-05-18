@@ -56,7 +56,7 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
-  <?php $share_page = array("node/11","node/48","node/85","node/161","node/86"); 
+  <?php $share_page = array("node/11","node/48","node/85","node/161","node/86","node/135"); 
   if(!in_array(current_path(),$share_page)){ ?>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-573807d023ef1c6e"></script>
   <?php } ?>
