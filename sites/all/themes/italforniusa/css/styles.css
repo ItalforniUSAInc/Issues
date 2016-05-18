@@ -107,17 +107,13 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-/**
- * Responsive design
- */
 
-/* Tablet and i-pad portrait view only */
+/* Responsive design */
 @media screen and (max-width: 992px) {
   /*#block-sharethis-sharethis-block  .sharethis-wrapper {
     text-align: center;
   }*/
-} /* 992px */
-
+}
 @media screen and (max-width: 480px) {
   .page-buy .view-grouping .view-grouping-content .views-row .views-field.views-field-field-company-image {
     position: relative;
@@ -139,3 +135,46 @@
     -webkit-appearance: none;
   }
 } /* 480 */
+
+
+/* Ready to Buy */
+.webform-client-form.webform-client-form-179 {
+  display: inline-block;
+  width: 100%;
+  margin: 15px 0 0;
+}
+.webform-client-form.webform-client-form-179 .form-item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 15px;
+}
+.webform-client-form.webform-client-form-179 .form-item > label {
+  display: inline-block;
+  width: 120px;
+  padding: 0 5px 0 0;
+}
+.webform-client-form.webform-client-form-179 .form-item input[type='text'],
+.webform-client-form.webform-client-form-179 .form-item input[type='email'],
+.webform-client-form.webform-client-form-179 .form-item input[type='password'],
+.webform-client-form.webform-client-form-179 .form-item select {
+  display: inline-block;
+  max-width: 365px;
+  width: 100%;
+}
+.webform-client-form.webform-client-form-179 select {
+  padding: 0 10px;
+  border: 1px solid #c4c4c4;
+  background-color: #FFF;
+  background-image: url('../images/menu-expanded.png');
+  background-position: -webkit-calc(100% - 10px) center;
+  background-position:    -moz-calc(100% - 10px) center;
+  background-position:         calc(100% - 10px) center;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+/* End */
